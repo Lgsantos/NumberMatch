@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Match</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main id="game-area">
         <div class="stats">
-            <h3>
-                Score <span id="currentScore">2</span> / <span id="totalAvailable">20</span>
-            </h3>
-            <p class="items">
-                <span id="number">6</span> <span id="item-name">Ducks</span>
-            </p>
-            <div class="match-buttons">
-                <button>&#10004;</button>
-                <button>&#10006;</button>
+            <div id="statContent">
+                <h3>
+                    Score <span id="currentScore">2</span> / <span id="totalAvailable">20</span>
+                </h3>
+                <p class="items">
+                    <span id="number">6</span> <span id="item-name">Ducks</span>
+                </p>
+                <div class="match-buttons">
+                    <button>&#10004;</button>
+                    <button>&#10006;</button>
+                </div>
             </div>
         </div>
         <div class="imageArea">
             <h3 id="message"></h3>
-            <div id="startScreen">
+            <!-- <div id="startScreen">
                 <h1>Bem-vindo ao jogo <em>Number Match</em>...</h1>
                 <em class="space-y">As regras são claras.</em>
                 <p class="space-y">
@@ -31,7 +34,7 @@
                 <p class="space-y">&#9654; Clique em &#10006; caso contrário</p>
                 <p class="space-y">Você tem <span id="timeSetting">3</span> segundos para decidir!</p>
                 <button id="play-button">Jogue!</button>
-            </div>
+            </div> -->
             <div id="imageContainer">
                 <img src="images/macaroons.jpg" alt="">
             </div>
