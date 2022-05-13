@@ -81,10 +81,32 @@ const images = [
     },
   ];
 
-  const randomNumber = Math.floor(Math.random() * images.length);
-  const radomImageName = images[randomNumber].image_name;
+  const generate = () => {
+    if (images.length === 0) {
+        stopTimer();
+        return;
+    }
+    const randomNumber = Math.floor(Math.random() * images.length);
+    const radomImageName = images[randomNumber].image_name;
+    if (imageContainer.hasChildNodes()) {
+        imageContainer.removeChild(imageContainer.firstElementChild);
+    }
+    const image = document.createElement("img");
+    image.src = `images/${radomImageName}`;
+    imageContainer.appendChild(image);
+    images.splice(randomNumber, 1);
+  };
+  let timerRef;
+  const timer = () => {
+    timerRef = setInterval(generate, 300);
+  }
 
-  const image = document.createElement("img");
-  image.src = `images/${radomImageName}`;
-  imageContainer.appendChild(image);
+  const play = () => {
+      generate();
+      timer();
+  }
+
+  const stopTimer = () => {
+      clearInterval(timerRef);
+  }
   
