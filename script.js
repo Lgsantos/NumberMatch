@@ -87,6 +87,7 @@ const images = [
     }
     const image = document.createElement("img");
     image.src = `images/${radomImageName}`;
+    image.classList.add("fade");
     imageContainer.appendChild(image);
   }
   const timeSetting = 3000;
