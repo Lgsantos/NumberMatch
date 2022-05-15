@@ -72,6 +72,7 @@ img {
 @media all and (min-width: 600px) {
     #game-area {
         display: flex;
+        font-size: 1.8rem;
     }
 
     .imageArea, .stats {

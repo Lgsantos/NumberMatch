@@ -12,14 +12,14 @@
         <div class="stats">
             <div id="statContent">
                 <h3>
-                    Score <span id="currentScore">2</span> / <span id="totalAvailable">20</span>
+                    Score <span id="currentScore"></span> / <span id="totalAvailable"></span>
                 </h3>
                 <p class="items">
-                    <span id="number">6</span> <span id="item-name">Ducks</span>
+                    <span id="number"></span> <span id="item-name"></span>
                 </p>
                 <div class="match-buttons">
-                    <button>&#10004;</button>
-                    <button>&#10006;</button>
+                    <button onclick="match()">&#10004;</button>
+                    <button onclick="noMatch()">&#10006;</button>
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
                     &#9654; Clique em &#10004; se o número de itens corresponde à quantidade na imagem
                 </p>
                 <p class="space-y">&#9654; Clique em &#10006; caso contrário</p>
-                <p class="space-y">Você tem <span id="timeSetting">3</span> segundos para decidir!</p>
+                <p class="space-y">Você tem <span id="timeSetting"></span> segundos para decidir!</p>
                 <button id="play-button" onclick="play()">Jogue!</button>
             </div>
             <div id="imageContainer">
